@@ -47,6 +47,7 @@ main .jumbotron {
   background-position: center;
   -webkit-filter: grayscale(50%);
   color: #f8f9f8;
+  padding: 7rem 0;
 }
 main .jumbotron .wrapper {
   width: 43%;
