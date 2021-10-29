@@ -1,0 +1,21 @@
+main {
+    .jumbotron {
+        background-image: url("/dist/img/jumbo.jpg");
+        background-size: cover;
+        background-position: center;
+        -webkit-filter: grayscale(50%);
+        color: $white;
+        .wrapper {
+            width: 43%;
+            h1 {
+                font-weight: bold;
+                color: white;
+            }
+            .btn {
+                border: 1px solid $white;
+                color: $white;
+            }
+        }
+    }
+
+}

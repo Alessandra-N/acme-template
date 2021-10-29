@@ -1,5 +1,9 @@
 body {
-  background-color: #58402c;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 0;
 }
 
 header {
@@ -35,4 +39,23 @@ header nav .cart {
   background-color: #222323;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
+}
+
+main .jumbotron {
+  background-image: url("/dist/img/jumbo.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(50%);
+  color: #f8f9f8;
+}
+main .jumbotron .wrapper {
+  width: 43%;
+}
+main .jumbotron .wrapper h1 {
+  font-weight: bold;
+  color: white;
+}
+main .jumbotron .wrapper .btn {
+  border: 1px solid #f8f9f8;
+  color: #f8f9f8;
 }
