@@ -1,0 +1,38 @@
+body {
+  background-color: #58402c;
+}
+
+header {
+  color: #f8f9f8;
+}
+header .announcement {
+  height: 8vh;
+  background-color: #222323;
+}
+header .announcement button {
+  background-color: #eb5656;
+  color: #f8f9f8;
+  line-height: 1rem;
+  height: 50%;
+  padding: 0 1rem 0.1rem;
+}
+header .announcement p {
+  margin: 0 1rem;
+}
+header nav {
+  background-color: #eb5656;
+  height: 8vh;
+}
+header nav .container .navbar-brand {
+  width: 50%;
+  color: #f8f9f8;
+}
+header nav .container .navbar-brand i {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+header nav .cart {
+  background-color: #222323;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}

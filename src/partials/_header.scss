@@ -1,0 +1,39 @@
+header {
+    color: $white;
+
+    .announcement {
+        height: 8vh;
+        background-color: $black;
+        button {
+            background-color: $red;
+            color: $white;
+            line-height: 1rem;
+            height: 50%;
+            padding: 0 1rem 0.1rem;
+        }
+        p {
+            margin: 0 1rem;
+        }
+    }
+
+    nav {
+        background-color: $red;
+        height: 8vh;
+        .container {
+            .navbar-brand {
+                width: 50%;
+                color: $white;
+                i {
+                    font-size: 2.5rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .cart {
+            background-color: $black;
+            padding: 0.5rem 1rem;
+            margin-left: 1rem;
+        }
+        
+    }
+}

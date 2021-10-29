@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./dist/css/app.css">
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/aa8b984e32.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div id="app">
+            <header>
+                <div class="announcement d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn rounded-pill">Announcement</button>
+                    <p>How we're responding</p>
+                </div>
+
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-md navbar-light w_90 ephesis text_shadow">
+                    
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <i class="fab fa-slideshare"></i>
+                            <span class="d-none d-lg-inline">A  C  M  E</span>
+                        </a>
+    
+                        <button class="navbar-toggler m-0 p-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon m-0"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto d-inline" v-for="link in nav_links">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="#">{{link}} <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="cart rounded">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+
+                </nav>
+                <!-- /END/navbar -->
+
+            </header>
+
+
+        </div>
+        
+        <!-- Vue JS -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <!-- Javascript -->
+        <script src="./dist/js/app.js"></script>
+    </body>
+</html>
