@@ -47,6 +47,9 @@ header nav .cart {
   padding: 0.4rem 0.8rem;
   margin-left: 1rem;
 }
+header nav .row {
+  margin: 0;
+}
 
 main {
   margin-top: 16vh;
@@ -59,14 +62,14 @@ main .jumbotron {
   color: #f8f9f8;
   padding: 7rem 0;
 }
-main .jumbotron .wrapper {
-  width: 43%;
+main .jumbotron .row {
+  margin: 0;
 }
-main .jumbotron .wrapper h1 {
+main .jumbotron .row h1 {
   font-weight: bold;
   color: white;
 }
-main .jumbotron .wrapper .btn {
+main .jumbotron .row .btn {
   border: 1px solid #f8f9f8;
   color: #f8f9f8;
 }
