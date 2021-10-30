@@ -28,7 +28,7 @@
                 </div>
 
                 <!-- navbar -->
-                <nav class="navbar navbar-expand-md navbar-light w_90 ephesis text_shadow">
+                <nav class="navbar navbar-expand-md navbar-light">
                     
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -36,23 +36,27 @@
                             <span class="d-none d-lg-inline">A  C  M  E</span>
                         </a>
     
-                        <button class="navbar-toggler m-0 p-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon m-0"></span>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
     
-                        <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto d-inline" v-for="link in nav_links">
-                                <li class="nav-item active">
+                        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav d-inline">
+                                <li class="nav-item active ml-3" v-for="link in nav_links">
                                     <a class="nav-link text-white" href="#">{{link}} <span class="sr-only">(current)</span></a>
                                 </li>
+                                <li>
+                                    <div class="cart rounded">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </li>
                             </ul>
-                        </div>
-    
-                        <div class="cart rounded">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                    </div>
 
+                        </div>
+                        
+                    </div>
+                    
                 </nav>
                 <!-- /END/navbar -->
 
@@ -81,5 +85,10 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <!-- Javascript -->
         <script src="./dist/js/app.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
