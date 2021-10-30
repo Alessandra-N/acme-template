@@ -2,6 +2,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+  margin-top: 16vh;
+}
+
 .container {
   padding: 0;
 }
@@ -16,6 +20,33 @@ body {
   margin: 0;
 }
 
+/* CSS media */
+@media screen and (max-width: 767px) {
+  .jumbotron .row,
+.statement .row {
+    padding: 0 5%;
+  }
+
+  .first_row {
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1026px) {
+  /* .card {
+      width: 30%;
+  } */
+}
+/* /END/ Css media */
 header {
   color: #f8f9f8;
   position: fixed;
@@ -61,10 +92,7 @@ header nav .row {
   margin: 0;
 }
 
-main {
-  margin-top: 16vh;
-}
-main .jumbotron {
+.jumbotron {
   background-image: url("/dist/img/jumbo.jpg");
   background-size: cover;
   background-position: center;
@@ -72,44 +100,41 @@ main .jumbotron {
   color: #f8f9f8;
   padding: 7rem 0;
 }
-main .jumbotron .row {
+.jumbotron .row {
   margin: 0;
 }
-main .jumbotron .row h1 {
+.jumbotron .row h1 {
   font-weight: bold;
   color: white;
 }
-main .jumbotron .row .btn {
+.jumbotron .row .btn {
   border: 1px solid #f8f9f8;
   color: #f8f9f8;
 }
 
-.support .first_row {
-  margin: 4rem 0;
+.support {
+  padding: 4rem 0;
 }
 .support .second_row .card img {
   height: 200px;
 }
 
-/* CSS media */
-@media screen and (max-width: 767px) {
-  .first_row {
-    padding: 0 1rem;
-  }
-
-  .card {
-    width: 90%;
-    margin: 5%;
-  }
+.statement {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/dist/img/statement.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(50%);
+  color: #f8f9f8;
+  padding: 7rem 0;
 }
-@media screen and (min-width: 768px) {
-  .card {
-    width: 30%;
-  }
+.statement .row {
+  margin: 0;
 }
-@media screen and (min-width: 1026px) {
-  /* .card {
-      width: 30%;
-  } */
+.statement .row h1 {
+  font-weight: bold;
+  color: white;
 }
-/* /END/ Css media */
+.statement .row .btn {
+  border: 1px solid #f8f9f8;
+  color: #f8f9f8;
+}

@@ -1,22 +1,4 @@
-main {
-    margin-top: 16vh;
-    .jumbotron {
-        background-image: url("/dist/img/jumbo.jpg");
-        background-size: cover;
-        background-position: center;
-        -webkit-filter: grayscale(50%);
-        color: $white;
-        padding: 7rem 0;
-        .row {
-            margin: 0;
-            h1 {
-                font-weight: bold;
-                color: white;
-            }
-            .btn {
-                border: 1px solid $white;
-                color: $white;
-            }
-        }
-    }
+.jumbotron {
+    background-image: url("/dist/img/jumbo.jpg");
+    @include jumbo;
 }
