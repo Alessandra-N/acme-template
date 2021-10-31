@@ -26,6 +26,19 @@ var app = new Vue({
       name: "Buy gift cards",
       img: "buy.webp",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem inventore aut minima aliquam, pariatur voluptatum eum ea consequuntur recusandae saepe."
+    }],
+    products: [{
+      name: "White Tent",
+      price: "200.00 USD",
+      img: "tent.jpg"
+    }, {
+      name: "Tin Coffee Tumbler",
+      price: "35.00 USD",
+      img: "tin.jpg"
+    }, {
+      name: "Blue Canvas Pack",
+      full_price: "145.00 USD",
+      img: "blue_pack.jpg"
     }]
   },
   mounted: function mounted() {}

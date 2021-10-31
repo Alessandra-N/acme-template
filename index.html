@@ -117,6 +117,26 @@
                     </div>
                 </section>
 
+                <section class="products">
+                    <div class="container">
+                        <div class="title">
+                            <h5 class="text-uppercase">Shop products</h2>
+                            <h2 class="font-weight-bold">Open 24/7/365.</h1>
+                        </div>
+
+                        <div class="row">
+                            <div class="card" v-for="product in support_products">
+                                <img class="card-img-top" :src="'/dist/img/' + product.img" alt="Card image cap">
+                                <div class="card-body">
+                                  <h5 class="card-title">{{product.name}}</h5>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
             </main>
 
         </div>
