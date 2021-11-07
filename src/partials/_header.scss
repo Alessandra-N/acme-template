@@ -6,7 +6,7 @@ header {
     width: 100%;
 
     .announcement {
-        height: 8vh;
+        padding: 3.5vh 0;
         background-color: $black;
         button {
             background-color: $red;
@@ -22,7 +22,7 @@ header {
 
     nav {
         background-color: $red;
-        height: 8vh;
+        padding: 2.5vh 0;
         .container {
             .navbar-brand {
                 width: 20%;

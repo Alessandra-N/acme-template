@@ -1,0 +1,22 @@
+.local {
+    position: relative;
+    padding: 0 0 2rem;
+    .img {
+        background-image: url(/dist/img/lady_laptop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 300px;
+        width: 20%;
+    }
+    .shop_local {
+        width: 90%;
+        text-align: justify;
+        background-color: $black;
+        color: $white;
+        .p {
+            z-index: 0;
+            font-size: 14px;
+        }
+    }
+}

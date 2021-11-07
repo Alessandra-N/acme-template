@@ -3,11 +3,12 @@ body {
 }
 
 main {
-  margin-top: 16vh;
+  margin-top: 15vh;
 }
 
 .container {
   padding: 0;
+  margin: auto;
 }
 
 .col {
@@ -21,10 +22,21 @@ main {
 }
 
 /* CSS media */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  header .announcement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .jumbotron .row,
 .statement .row {
     padding: 0 5%;
+  }
+
+  .support .card img {
+    height: 260px;
   }
 
   .first_row {
@@ -35,16 +47,41 @@ main {
     width: 90%;
     margin: 5%;
   }
+
+  .local .container {
+    justify-content: center;
+    margin: auto;
+  }
+  .local .container .img {
+    display: none;
+  }
+  .local .container .shop_local {
+    padding: 2rem;
+  }
+
+  footer .container {
+    padding: 0 1.7rem;
+  }
 }
 @media screen and (min-width: 768px) {
+  .support .card img {
+    height: 200px;
+  }
+
   .card {
     width: 30%;
   }
+
+  .local .shop_local {
+    padding: 2rem 2rem 2rem 12rem;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 1026px) {
-  /* .card {
-      width: 30%;
-  } */
+  .local .shop_local {
+    padding: 2rem 2rem 2rem 23rem;
+    margin-left: auto;
+  }
 }
 /* /END/ Css media */
 header {
@@ -55,7 +92,7 @@ header {
   width: 100%;
 }
 header .announcement {
-  height: 8vh;
+  padding: 3.5vh 0;
   background-color: #222323;
 }
 header .announcement button {
@@ -70,7 +107,7 @@ header .announcement p {
 }
 header nav {
   background-color: #eb5656;
-  height: 8vh;
+  padding: 2.5vh 0;
 }
 header nav .container .navbar-brand {
   width: 20%;
@@ -115,9 +152,6 @@ header nav .row {
 .support {
   padding: 4rem 0;
 }
-.support .second_row .card img {
-  height: 200px;
-}
 
 .statement {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/dist/img/statement.jpg");
@@ -142,7 +176,10 @@ header nav .row {
 .products {
   padding: 4rem 0;
 }
-.products .button_details {
+.products .card-body {
+  text-align: center;
+}
+.products .card-body .button_details {
   background-color: #eb5656;
   color: #f8f9f8;
 }
@@ -151,4 +188,44 @@ header nav .row {
   padding: 0.5rem 2.5rem;
   background-color: #222323;
   color: #f8f9f8;
+}
+
+.local {
+  position: relative;
+  padding: 0 0 2rem;
+}
+.local .img {
+  background-image: url(/dist/img/lady_laptop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 300px;
+  width: 20%;
+}
+.local .shop_local {
+  width: 90%;
+  text-align: justify;
+  background-color: #222323;
+  color: #f8f9f8;
+}
+.local .shop_local .p {
+  z-index: 0;
+  font-size: 14px;
+}
+
+footer {
+  height: 20vh;
+  background-color: #222323;
+  color: #f8f9f8;
+  font-size: 3rem;
+}
+footer .container {
+  height: 100%;
+}
+footer .container a {
+  color: #f8f9f8;
+  font-size: 2rem;
+}
+footer .container .icons i {
+  margin-left: 1rem;
 }

@@ -1,0 +1,19 @@
+footer {
+    height: 20vh;
+    background-color: $black;
+    color: $white;
+    font-size: 3rem;
+    .container {
+        height: 100%;
+        a {
+            color: $white;
+            font-size: 2rem;
+        }
+        .icons {
+            i {
+                margin-left: 1rem;
+            }
+        }
+    }
+    
+}

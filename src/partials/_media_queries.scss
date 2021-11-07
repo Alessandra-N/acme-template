@@ -1,11 +1,28 @@
 /* CSS media */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    header {
+        .announcement {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
     .jumbotron,
     .statement {
         .row {
             padding: 0 5%;
         }
     }
+
+    .support {
+        .card {
+            img {
+                height: 260px;
+            }
+        }
+    }
+
     .first_row {
         padding: 0 1rem;
     }
@@ -14,19 +31,54 @@
         margin: 5%;
     }
 
+    .local {
+        .container {
+            justify-content: center;
+            margin: auto;
+            .img {
+                display: none;
+            }
+            .shop_local {
+                padding: 2rem;
+            }
+        }
+    }
+
+    footer {
+        .container {
+            padding: 0 1.7rem;
+        }
+    }
 }
   
 @media screen and (min-width: 768px) {
+    .support {
+        .card {
+            img {
+                height: 200px;
+            }
+        }
+    }
+
     .card {
         width: 30%;
     }
 
+    .local {
+        .shop_local {
+            padding: 2rem 2rem 2rem 12rem;
+            margin-left: auto;
+        }
+    }
 }
 
 @media screen and (min-width: 1026px) {
-    /* .card {
-        width: 30%;
-    } */
+    .local {
+        .shop_local {
+            padding: 2rem 2rem 2rem 23rem;
+            margin-left: auto;
+        }
+    }
 
 }
 /* /END/ Css media */
