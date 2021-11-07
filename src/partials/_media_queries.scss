@@ -1,0 +1,32 @@
+/* CSS media */
+@media screen and (max-width: 767px) {
+    .jumbotron,
+    .statement {
+        .row {
+            padding: 0 5%;
+        }
+    }
+    .first_row {
+        padding: 0 1rem;
+    }
+    .card {
+        width: 90%;
+        margin: 5%;
+    }
+
+}
+  
+@media screen and (min-width: 768px) {
+    .card {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1026px) {
+    /* .card {
+        width: 30%;
+    } */
+
+}
+/* /END/ Css media */

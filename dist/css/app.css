@@ -142,7 +142,13 @@ header nav .row {
 .products {
   padding: 4rem 0;
 }
-.products button {
+.products .button_details {
   background-color: #eb5656;
+  color: #f8f9f8;
+}
+.products .button_view {
+  margin: 3rem auto;
+  padding: 0.5rem 2.5rem;
+  background-color: #222323;
   color: #f8f9f8;
 }
