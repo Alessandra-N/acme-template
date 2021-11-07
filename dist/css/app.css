@@ -138,3 +138,11 @@ header nav .row {
   border: 1px solid #f8f9f8;
   color: #f8f9f8;
 }
+
+.products {
+  padding: 4rem 0;
+}
+.products button {
+  background-color: #eb5656;
+  color: #f8f9f8;
+}

@@ -37,7 +37,7 @@ var app = new Vue({
       img: "tin.jpg"
     }, {
       name: "Blue Canvas Pack",
-      full_price: "145.00 USD",
+      price: "145.00 USD",
       img: "blue_pack.jpg"
     }]
   },

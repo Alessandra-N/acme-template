@@ -81,8 +81,8 @@
                     <div class="container">
                         <div class="row first_row">
                             <div class="col-xs-12 col-md-6 m-0 p-0">
-                                <h5 class="text-uppercase">Ways to Support</h2>
-                                <h2 class="font-weight-bold">Support Acme Outdoors.</h1>
+                                <h5 class="text-uppercase">Ways to Support</h5>
+                                <h2 class="font-weight-bold">Support Acme Outdoors.</h2>
                             </div>
                             <div class="offset-md-1"></div>
                             <div class="col-xs-12 col-md-5 m-0 p-0">
@@ -119,22 +119,24 @@
 
                 <section class="products">
                     <div class="container">
-                        <div class="title">
-                            <h5 class="text-uppercase">Shop products</h2>
-                            <h2 class="font-weight-bold">Open 24/7/365.</h1>
+                        <div class="row flex-column">
+                            
+                            <h5 class="text-uppercase">shop products</h5>
+                            <h2 class="font-weight-bold">Open 24/7/365.</h2>
+                            
                         </div>
 
-                        <div class="row">
-                            <div class="card" v-for="product in support_products">
-                                <img class="card-img-top" :src="'/dist/img/' + product.img" alt="Card image cap">
-                                <div class="card-body">
-                                  <h5 class="card-title">{{product.name}}</h5>
-                                  
+                        <div class="row second_row d-flex justify-content-between">
+                            <div class="card" v-for="product in products">
+                                <img class="card-img-top" :src="'/dist/img/' +product.img" alt="Card image cap">
+                                <div class="card-body d-flex flex-column align-items-center">
+                                  <h4 class="card-title">{{product.name}}</h4>
+                                  <h5 class="card-title">{{product.price}}</h5>
+                                  <button type="button" class="btn">Details</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </section>
 
             </main>
